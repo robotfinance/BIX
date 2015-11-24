@@ -1,6 +1,6 @@
 # BIX
 
-<i>this is a very early experimental alpha release of BIX (this version does not even support concurrent connections/websockets and uses a hardcoded USDCNY exchange rate) a more advanced python version will follow soon. we are looking forward to receiving your feedback via mail (bix@robotfinance.org) or Twitter (https://twitter.com/RobotFinance)</i>
+<i>this is a very early experimental alpha release of BIX (this version does neither support concurrent connections nor websockets and uses a hardcoded USDCNY exchange rate) a more advanced python version will follow soon. we are looking forward to receiving your feedback via mail (bix@robotfinance.org) or Twitter (https://twitter.com/RobotFinance)</i>
 
 an open, fast and free Bitcoin (near) real-time price index
 
@@ -10,8 +10,8 @@ an open, fast and free Bitcoin (near) real-time price index
 
 <p><b>Current exchange weighting:</b><br>
 50% Bitfinex<br>
-33,33% Bitstamp<br>
-16,67% Chinese market (currently Huobi BTCCNY price in USD)<p>
+33.33% Bitstamp<br>
+16.67% Chinese market (currently Huobi BTCCNY price in USD)<p>
 
 <p><b>Dynamic de-weighting:</b><br>
 Exchanges will be de-weighted on a short term basis when<br>
