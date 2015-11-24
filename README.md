@@ -1,15 +1,17 @@
 # BIX
 
-<i>this is a very early experimental alpha release of BIX (this version does not even support concurrent connections or websockets) a python version will follow soon. we are looking forward to receiving your feedback via mail (bix@robotfinance.org) or Twitter (https://twitter.com/RobotFinance)</i>
+<i>this is a very early experimental alpha release of BIX (this version does not even support concurrent connections/websockets and uses a hardcoded USDCNY exchange rate) a more advanced python version will follow soon. we are looking forward to receiving your feedback via mail (bix@robotfinance.org) or Twitter (https://twitter.com/RobotFinance)</i>
 
 an open, fast and free Bitcoin (near) real-time price index
 
-<p><b>Our Goal:</b> to build an open source alternative to TradeBlock's XBX (see https://tradeblock.com/markets/index/). A proprietary index like XBX could have negative effects, because<br>
+<p><b>Our Goal:</b> building an open source alternative to TradeBlock's XBX (see https://tradeblock.com/markets/index/). A proprietary index like XBX could have negative effects on Bitcoin market quality, because<br>
 1. it can easily be manipulated by a central entity<br>
-2. it can't be rebuilt at your own machine, so it does not only cost more money to consume Tradeblock's feed, it also adds latency to use data via TradeBlock's "proxy server" in NYC</p>
+2. it can't be rebuilt at your own machine, so it does not only cost more money to consume Tradeblock's feed, it also adds latency to use data via TradeBlock's proxy server in NYC</p>
 
 <p><b>Current exchange weighting:</b><br>
-50% Bitfinex, 33,33% Bitstamp and 16,67% Market in Chinese Yen (currently Huobi)<p>
+50% Bitfinex<br>
+33,33% Bitstamp<br>
+16,67% Chinese market (currently Huobi BTCCNY price in USD)<p>
 
 <p><b>Dynamic de-weighting:</b><br>
 Exchanges will be de-weighted on a short term basis when<br>
