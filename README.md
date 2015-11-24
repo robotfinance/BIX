@@ -13,7 +13,7 @@ Exchanges will be de-weighted on a short term basis when<br>
 a) order book data does not update for more than 59 seconds<br>
 b) it takes more than 1 second to connect to the exchange / the exchange is down</p>
 
-<p>We calculate a <code>Virtual price</code> as soon as there is a problem on one exchange. The Virtual Price is based on the last premium/discount and the last spread of the exchange in drouble and the price movements of the other exchanges that deliver up-to-date data.</p>
+<p>We calculate a <code>Virtual price</code> as soon as there is a problem on an exchange. The Virtual Price is based on the last premium/discount and the last spread of the de-weighted exchange and the price movements of the other exchanges that deliver up-to-date data.</p>
 
 <p><b>Demo:</b><br>
 https://robotfinance.org/api/bix_alpha/</p>
