@@ -1,6 +1,6 @@
 # BIX
 
-<i>this is a very early experimental alpha release of BIX. this version does not support concurrent connections, websockets. a python version will follow soon. we are looking forward to receiving your feedback via mail (bix@robotfinance.org) or Twitter (https://twitter.com/RobotFinance)</i>
+<i>this is a very early experimental alpha release of BIX. this version does not support concurrent connections or websockets. a python version will follow soon. we are looking forward to receiving your feedback via mail (bix@robotfinance.org) or Twitter (https://twitter.com/RobotFinance)</i>
 
 an open, fast and free Bitcoin (near) real-time price index
 
