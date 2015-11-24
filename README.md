@@ -2,8 +2,8 @@
 Bitcoin (near) real-time index
 
 <p><b>Our Goal:</b> to build an open source alternative to TradeBlock's XBX (see https://tradeblock.com/markets/index/). A proprietary index like XBX could have negative effects, because 
-1. it can easily be manipulated by a central entity 
-2. 2. it can't be rebuilt at your own machine, so it does not only cost more money to consume XBX's feed, it also adds latency to use data via TradeBlock's "proxy server" in NYC</p>
+1. it can easily be manipulated by a central entity<br>
+2. it can't be rebuilt at your own machine, so it does not only cost more money to consume XBX's feed, it also adds latency to use data via TradeBlock's "proxy server" in NYC</p>
 
 <p><b>Current exchange weighting:</b><br>
 50% Bitfinex, 33,33% Bitstamp and 16,67% Market in Chinese Yen (currently Huobi)<p>
