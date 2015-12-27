@@ -22,6 +22,8 @@ b) it takes more than 1 second to connect to the exchange / the exchange is down
 
 <p>We calculate a <code>Virtual Price</code> as soon as there is a problem on an exchange. The Virtual Price is based on the last premium/discount and the last spread of the de-weighted exchange and the price movements of the other exchanges that deliver up-to-date data.</p>
 
-<p><b>Demo:</b><br>
+<p><b>REST API Demo:</b><br>
 https://robotfinance.org/api/bix_alpha/</p>
+<p><b>Websocket API Demo: (powered by pusher.com)</b><br>
+https://robotfinance.org/bix/</p>
 
