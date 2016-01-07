@@ -22,23 +22,24 @@ b) it takes more than 1 second to connect to the exchange / the exchange is down
 
 <p>We calculate a <code>Virtual Price</code> as soon as there is a problem on an exchange. The Virtual Price is based on the last premium/discount and the last spread of the de-weighted exchange and the price movements of the other exchanges that deliver up-to-date data.</p>
 
+<p><b>Websocket GUI Demo: (powered by pusher.com)</b><br>
+https://robotfinance.org/bix/</p>
+
+<p><b>Websocket API JS Demo: (Los Angeles datacenter)</b><br>
+<code>var pusher = new Pusher('cf8d2e4ae29bb0960db7', {encrypted: true});</code><br>
+<code>var channel = pusher.subscribe('bix_alpha');</code><br>
+<code>channel.bind('price_update', function(data) { alert(data.message); });</code></p>
+
+<p><b>Websocket API JS Demo: (Frankfurt datacenter)</b><br>
+<code>var pusher = new Pusher('87a8acb3a5c184357a38', { cluster: 'eu', encrypted: true });</code><br>
+<code>var channel = pusher.subscribe('bix_alpha');</code><br>
+<code>channel.bind('price_update', function(data) { alert(data.message); });</code></p>
+
 <p><b>REST API Demo:</b><br>
 https://la.robotfinance.org/api/bix_alpha/<br>
 https://frankfurt.robotfinance.org/api/bix_alpha/</p>
 <p>Choose a close location to minimize latency. You can test the response time by using this CURL command:</p>
 <p><code>curl -s -w "%{time_total}\n" -o /dev/null https://la.robotfinance.org/api/bix_alpha/</code></p>
 <p><code>curl -s -w "%{time_total}\n" -o /dev/null https://frankfurt.robotfinance.org/api/bix_alpha/</code></p>
-<p><b>Websocket API Demo: (powered by pusher.com)</b><br>
-https://robotfinance.org/bix/</p>
-
-<p><b>Websocket JS Demo: (Los Angeles datacenter)</b><br>
-<code>var pusher = new Pusher('cf8d2e4ae29bb0960db7', {encrypted: true});</code><br>
-<code>var channel = pusher.subscribe('bix_alpha');</code><br>
-<code>channel.bind('price_update', function(data) { alert(data.message); });</code></p>
-
-<p><b>Websocket JS Demo: (Frankfurt datacenter)</b><br>
-<code>var pusher = new Pusher('87a8acb3a5c184357a38', { cluster: 'eu', encrypted: true });</code><br>
-<code>var channel = pusher.subscribe('bix_alpha');</code><br>
-<code>channel.bind('price_update', function(data) { alert(data.message); });</code></p>
 
 
