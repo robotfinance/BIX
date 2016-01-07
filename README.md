@@ -31,3 +31,26 @@ https://frankfurt.robotfinance.org/api/bix_alpha/</p>
 <p><b>Websocket API Demo: (powered by pusher.com)</b><br>
 https://robotfinance.org/bix/</p>
 
+<p><b>Websocket JS Demo: (Los Angeles datacenter)</b><br><code>
+var pusher = new Pusher('cf8d2e4ae29bb0960db7', {encrypted: true});
+
+var channel = pusher.subscribe('bix_alpha');
+
+channel.bind('price_update', function(data) {
+
+	alert(data.message);
+
+});</code></p>
+
+<p><b>Websocket JS Demo: (Frankfurt datacenter)</b><br><code>
+var pusher = new Pusher('87a8acb3a5c184357a38', { cluster: 'eu', encrypted: true });
+
+var channel = pusher.subscribe('bix_alpha');
+
+channel.bind('price_update', function(data) {
+
+	alert(data.message);
+
+});</code></p>
+
+
