@@ -36,7 +36,7 @@ https://robotfinance.org/bix/</p>
 <code>var channel = pusher.subscribe('bix_alpha');</code><br>
 <code>channel.bind('price_update', function(data) { alert(data.message); });</code></p>
 
-<p><b>Websocket JS Demo: (Frankfurt datacenter)</b><br><code>
+<p><b>Websocket JS Demo: (Frankfurt datacenter)</b><br>
 <code>var pusher = new Pusher('87a8acb3a5c184357a38', { cluster: 'eu', encrypted: true });</code><br>
 <code>var channel = pusher.subscribe('bix_alpha');</code><br>
 <code>channel.bind('price_update', function(data) { alert(data.message); });</code></p>
