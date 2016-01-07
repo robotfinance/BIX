@@ -32,24 +32,24 @@ https://frankfurt.robotfinance.org/api/bix_alpha/</p>
 https://robotfinance.org/bix/</p>
 
 <p><b>Websocket JS Demo: (Los Angeles datacenter)</b><br><code>
-var pusher = new Pusher('cf8d2e4ae29bb0960db7', {encrypted: true});
+var pusher = new Pusher('cf8d2e4ae29bb0960db7', {encrypted: true});<br><br>
 
-var channel = pusher.subscribe('bix_alpha');
+var channel = pusher.subscribe('bix_alpha');<br><br>
 
-channel.bind('price_update', function(data) {
+channel.bind('price_update', function(data) {<br><br>
 
-	alert(data.message);
+	alert(data.message);<br><br>
 
 });</code></p>
 
 <p><b>Websocket JS Demo: (Frankfurt datacenter)</b><br><code>
-var pusher = new Pusher('87a8acb3a5c184357a38', { cluster: 'eu', encrypted: true });
+var pusher = new Pusher('87a8acb3a5c184357a38', { cluster: 'eu', encrypted: true });<br><br>
 
-var channel = pusher.subscribe('bix_alpha');
+var channel = pusher.subscribe('bix_alpha');<br><br>
 
-channel.bind('price_update', function(data) {
+channel.bind('price_update', function(data) {<br><br>
 
-	alert(data.message);
+	alert(data.message);<br><br>
 
 });</code></p>
 
