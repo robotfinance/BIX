@@ -2,8 +2,8 @@
 
 <i>this is a very early experimental alpha release of BIX (this version does neither support concurrent connections nor websockets and uses a hardcoded USDCNY exchange rate) a more advanced python version will follow soon. we are looking forward to receiving your feedback via mail (bix@robotfinance.org) or Twitter (https://twitter.com/RobotFinance)</i>
 
-BIX is a decentralized global Bitcoin price index that is<br>
-open, fast and free
+BIX is a decentralized global Bitcoin price index<br>
+it's open, fast and free
 
 <p><b>Our Goal:</b> building an open source alternative to TradeBlock's XBX (see https://tradeblock.com/markets/index/). A proprietary index like XBX could have negative effects on Bitcoin market quality, because<br>
 1. it can easily be manipulated by a central entity<br>
