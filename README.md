@@ -12,8 +12,8 @@ it's open, fast and free
 <p><b>Current exchange weightings:</b><br>
 50% Bitfinex USD<br>
 30% Bitstamp USD<br>
-12% Huobi CNY (USD equivalent)<br>
-8% Kraken EUR (USD equivalent)<p>
+14% Kraken EUR (USD equivalent)<br>
+6% Huobi CNY (USD equivalent)<p>
 
 <p><b>Dynamic de-weighting:</b><br>
 Exchanges will be de-weighted on a short term basis when<br>
