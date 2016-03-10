@@ -41,7 +41,7 @@ BIXPY follows a multiprocessing rather than a multithreading approach. Redis is 
 Before you start running BIX you have to add your PubNub keys and modify the path for your web server's REST api in the <code>bix.py</code> file:
 
 <p><code>pubnub = Pubnub(publish_key='YOUR-PUB-KEY', subscribe_key='YOUR-SUB-KEY')</code><br>
-<code>api_path = '/var/www/yourdomain.org/htdocs/api/v1/bix/yourfile.json'</code></p>
+<code>api_path = '/var/www/api/v1/bix/yourfile.json'</code></p>
 
 <p><b>Next steps:</b><br>
 1. dynamic weightings based on average volume, latency and up-time of exchanges<br>
