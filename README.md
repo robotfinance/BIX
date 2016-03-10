@@ -2,7 +2,7 @@
 
 <i>this is an experimental beta release of BIX. we are looking forward to receiving your feedback via mail (bix@robotfinance.org) or Twitter (https://twitter.com/RobotFinance)</i>
 
-BIX is a decentralized global Bitcoin price index<br>
+BIX is a distributed Bitcoin price index<br>
 it's open, fast and free
 
 <p><b>Our Goal:</b> building a distributed price feed with<br>
