@@ -44,7 +44,7 @@ Before you start running BIX you have to add your PubNub keys and modify the pat
 <code>api_path = '/var/www/yourdomain.org/htdocs/api/v1/bix/yourfile.json'</code></p>
 
 <p><b>Next steps:</b><br>
-1. dynamic weithings based on average volume, latency and up-time of exchanges<br>
+1. dynamic weightings based on average volume, latency and up-time of exchanges<br>
 2. running BIX on multiple nodes: <br>
 - distributed price index calculation<br>
 - cross node verification</p>
