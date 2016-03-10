@@ -5,11 +5,11 @@
 BIX is a decentralized global Bitcoin price index<br>
 it's open, fast and free
 
-<p><b>Our Goal:</b> building a distributed price feed with
-- 100% up-time (no single point of failure)
-- no single point of trust 
+<p><b>Our Goal:</b> building a distributed price feed with<br>
+- 100% up-time (no single point of failure)<br>
+- no single point of trust </p>
 
-XBX is an open source alternative to TradeBlock's XBX index (see https://tradeblock.com/markets/index/). A proprietary index like XBX could have negative effects on Bitcoin market quality, because<br>
+<p>XBX is an open source alternative to TradeBlock's XBX index (see https://tradeblock.com/markets/index/). A proprietary index like XBX could have negative effects on Bitcoin market quality, because<br>
 1. it can easily be manipulated by a central entity<br>
 2. it can't be rebuilt at your own machine, so it does not only cost more money to consume Tradeblock's feed, it also adds latency to use data via TradeBlock's proxy server in NYC</p>
 
