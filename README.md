@@ -25,7 +25,7 @@ https://robotfinance.org/bix/beta</p>
 https://robotfinance.org/api/v1/bix/usd</p>
 
 <p><b>Next steps:</b><br>
-cross node verfifaction <br>
-running BIX on different nodes: distributed price index calculation
-</p>
+running BIX on different nodes: <br>
+- distributed price index calculation<br>
+- cross node verification</p>
 
