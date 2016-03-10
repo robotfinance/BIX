@@ -2,10 +2,11 @@ import time
 import redis
 import json
 import threading
-import pprint
+from pubnub import Pubnub
 
 r = redis.StrictRedis(host='localhost', port=6379, db=0)
-api_path = '/var/www/robotfinance.org/htdocs/api/v1/bix/usd/index.html'
+pubnub = Pubnub(publish_key='YOUR-PUB-KEY', subscribe_key='YOUR-SUB-KEY')
+api_path = '/var/www/yourdomain.org/htdocs/api/v1/bix/yourfile.json'
 bix_old = {}
 bix_old['ask'] = 0
 bix_old['bid'] = 0
@@ -90,7 +91,14 @@ def calculateBIX(bfx_new, okc_new, bst_new, rest_bfx_new, rest_okc_new, rest_bst
     	print r.set('bix', bix)
         with open(api_path, 'w') as outfile:
             json.dump(bix_ticker, outfile)
+        message = {}
+        message['eon'] = {}
+        message['eon']['bix'] = bix_ticker['mid']
+        message['eon']['bfx'] = bfx_ticker['mid']
+        message['eon']['okc'] = okc_ticker['mid']
+        message['eon']['bst'] = bst_ticker['mid']
 
+        pubnub.publish('bix-chart', message, callback=PubNubcallback, error=PubNubcallback)
 
 def main():
         
@@ -102,8 +110,6 @@ def main():
         print 'Listening...'
         time.sleep(10)
     	
-
-
 
 if __name__ == '__main__':
     main()
