@@ -7,7 +7,7 @@ it's open, fast and free
 
 <p><b>Our Goal:</b> building a distributed price feed with<br>
 - 100% up-time (no single point of failure)<br>
-- no single source of the trust </p>
+- no single source of the truth </p>
 
 <p>XBX is an open source alternative to TradeBlock's XBX index (see https://tradeblock.com/markets/index/). A proprietary index like XBX could have negative effects on Bitcoin market quality, because<br>
 1. it can easily be manipulated by a central entity<br>
