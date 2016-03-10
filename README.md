@@ -18,11 +18,21 @@ it's open, fast and free
 35% OKCoin USD<br>
 20% Bitstamp USD<br>
 
-<p><b>Websocket GUI Demo:</b> (powered by pubnub.com and D3)<br>
+<p>BIX uses the mid price calculated from the best bid and ask as reference. Using bids and offers from market makers and other liquidity providers guarantees more regular price updates especially when trade volume is low.</p>
+
+<p><b>Real-Time Fontend Demo:</b> (powered by pubnub.com and D3)<br>
 https://robotfinance.org/bix/beta</p>
 
 <p><b>REST API Demo:</b><br>
 https://robotfinance.org/api/v1/bix/usd</p>
+
+<p><b>Setup:</b><br><br>
+
+BIXPY follows a multiprocessing rather than a multithreading approach. Redis is used as message broker. You can setup Redis within a few seconds. Here is a short example how to install it on Debian/Ubuntu:</p>
+
+<p><code>sudo apt-get install redis-server</code></p>
+
+<p><code>sudo pip install redis</code></p>
 
 <p><b>Next steps:</b><br>
 running BIX on multiple nodes: <br>
