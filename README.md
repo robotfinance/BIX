@@ -5,7 +5,7 @@
 BIX is a decentralized global Bitcoin price index<br>
 it's open, fast and free
 
-<p><b>Our Goal: building a distributed price feed with
+<p><b>Our Goal:</b> building a distributed price feed with
 - 100% up-time (no single point of failure)
 - no single point of trust 
 
