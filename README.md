@@ -18,7 +18,7 @@ it's open, fast and free
 35% OKCoin USD<br>
 20% Bitstamp USD<br>
 
-<p>BIX uses the mid price calculated from the best bid and ask as reference. Using bids and offers from market makers and other liquidity providers guarantees more regular price updates especially when trade volume is low.</p>
+<p>BIX uses the mid price calculated from the best bid and ask as reference. Using bids and offers from market makers and other liquidity providers instead of trade data guarantees more regular price updates especially when trade volume is low.</p>
 
 <p><b>Real-Time Fontend Demo:</b> (powered by pubnub.com and D3)<br>
 https://robotfinance.org/bix/beta</p>
