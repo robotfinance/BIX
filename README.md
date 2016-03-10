@@ -9,9 +9,9 @@ it's open, fast and free
 - 100% up-time (no single point of failure)<br>
 - no single source of the truth </p>
 
-<p>XBX is an open source alternative to TradeBlock's XBX index (see https://tradeblock.com/markets/index/). A proprietary index like XBX could have negative effects on Bitcoin market quality, because<br>
-1. it can easily be manipulated by a central entity<br>
-2. it can't be rebuilt at your own machine, so it does not only cost more money to consume Tradeblock's feed, it also adds latency to use data via TradeBlock's proxy server in NYC</p>
+<p>XBX is an open source alternative to TradeBlock's XBX index (see https://tradeblock.com/markets/index/). We believe that proprietary indices like XBX  have negative effects on market quality, because<br>
+1. they can easily be manipulated by a central entity<br>
+2. they can't be rebuilt locally, so it does not only cost more money to consume Tradeblock's feed, it also adds latency to receive data via TradeBlock's proxy server in NYC</p>
 
 <p><b>Current exchange weightings:</b><br>
 45% Bitfinex USD<br>
