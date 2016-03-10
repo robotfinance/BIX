@@ -30,9 +30,18 @@ https://robotfinance.org/api/v1/bix/usd</p>
 
 BIXPY follows a multiprocessing rather than a multithreading approach. Redis is used as message broker. You can setup Redis within a few seconds. Here is a short example how to install it on Debian/Ubuntu:</p>
 
-<p><code>sudo apt-get install redis-server</code></p>
+<p><code>$ sudo apt-get install redis-server</code></p>
 
-<p><code>sudo pip install redis</code></p>
+<p><code>$ sudo pip install redis</code></p>
+
+<p>To push updates to a front-end with PubNub you have to setup the library:</p>
+
+<p><code>$ sudo pip install pubnub</code></p>
+
+Before you start running BIX you have to add your PubNub keys and modify the path for your web server's REST api path in the <code>bix.py</code> file:
+
+<p><code>pubnub = Pubnub(publish_key='YOUR-PUB-KEY', subscribe_key='YOUR-SUB-KEY')</code><br>
+<code>api_path = '/var/www/yourdomain.org/htdocs/api/v1/bix/yourfile.json'</code></p>
 
 <p><b>Next steps:</b><br>
 running BIX on multiple nodes: <br>
