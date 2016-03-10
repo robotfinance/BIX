@@ -22,7 +22,10 @@ it's open, fast and free
 https://robotfinance.org/bix/beta</p>
 
 <p><b>REST API Demo:</b><br>
-https://robotfinance.org/api/v1/bix/usd<br>
+https://robotfinance.org/api/v1/bix/usd</p>
 
-
+<p><b>Next steps:</b><br>
+cross node verfifaction 
+running BIX on different nodes: distributed price index calculation
+</p>
 
