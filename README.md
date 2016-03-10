@@ -7,6 +7,7 @@ it's open, fast and free
 
 <p><b>Our Goal:</b> building a distributed price feed with<br>
 - 100% up-time (no single point of failure)<br>
+- low latency<br>
 - no single source of the truth </p>
 
 <p>BIX is an open source alternative to <a href="https://tradeblock.com/markets/index/">TradeBlock's XBX index</a>. We believe that proprietary indices like XBX  have negative effects on market quality, because<br>
@@ -20,7 +21,7 @@ it's open, fast and free
 
 <p>BIX uses the mid price calculated from the best bid and ask as reference. Using bids and offers from market makers and other liquidity providers instead of trade data guarantees more regular price updates especially when trade volume is low.</p>
 
-<p><b>Real-Time Fontend Demo:</b> (powered by pubnub.com and D3)<br>
+<p><b>Real-Time Frontend Demo:</b> (powered by pubnub.com and D3)<br>
 https://robotfinance.org/bix/beta</p>
 
 <p><b>REST API Demo:</b><br>
