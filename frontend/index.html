@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+            <meta name="description" content="D3 powered spline chart that updates when it receives information from the PubNub data stream network.">
+
+<title>Realtime BIX Charts</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	
+	<style>
+	body {
+		margin: 0;
+		/*padding: 0px 100px;*/
+	}
+	.map {
+		width: 100%;
+		height: 500px;
+	}
+	.map, #chart {
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+	p, iframe, h1,h2,h3,h4,h5,h6,p,.map {
+		margin: 20px 0px;
+	}
+	h1 {
+		margin-top: 0px;
+	}
+	.about p {
+		opacity: .7;
+	}
+	.about {
+		border-bottom: 1px solid #efefef;
+	}
+	</style>
+
+
+	<!-- ### EON -->
+
+	<script type="text/javascript" src="https://pubnub.github.io/eon/v/eon/0.0.9/eon.js" > </script>
+	<link type="text/css" rel="stylesheet" href="https://pubnub.github.io/eon/v/eon/0.0.9/eon.css" />
+
+	<!-- ### /EON -->
+   </head>
+ 
+  <body id="realtime-spline-chart" class="page page-id-15312 page-child parent-pageid-15270 page-template page-template-templates page-template-different-theme page-template-templatesdifferent-theme-php realtime-spline-chart">
+  
+
+  <div class="container">
+
+		<div class="row">
+
+			<div class="col-md-6">
+			  	<p class="back">
+			  		<a href="https://robotfinance.org/bix">BIX</a>
+			  	</p>
+			</div>
+			<div class="col-md-6">
+				<p><a class="btn btn-primary pull-right" href="https://github.com/robotfinance/bix">Github</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+
+			  	<div class="about">
+			  		<h1>Realtime BIX Chart</h1>
+			  		<p>front-end powered by PubNub and D3</p>
+			  	</div>
+			</div>
+
+	  </div>
+<div class="row">
+
+  <div class="col-md-12">
+
+    <div id="chart" class="c3" style="max-height: 320px; position: relative;"><svg width="1140" height="320" style="overflow: hidden;"></div>
+
+  </div>
+
+</div>
+
+<script>
+  var pubnub = PUBNUB.init({
+    subscribe_key: 'sub-c-9adfcc80-e642-11e5-a027-0619f8945a4f',
+    ssl: (('https:' == document.location.protocol) ? true : false)
+  });
+  var channel = "bix-chart"
+  eon.chart({
+    pubnub: pubnub,
+    channel: channel,
+    history: false,
+    flow: true,
+    generate: {
+      bindto: '#chart',
+      data: {
+        type: 'spline',
+        labels: false
+      }
+    }
+  });
+</script>
+
+
+  	</div>
+
+
+
+</body></html>
