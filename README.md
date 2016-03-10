@@ -26,7 +26,7 @@ https://robotfinance.org/bix/beta</p>
 <p><b>REST API Demo:</b><br>
 https://robotfinance.org/api/v1/bix/usd</p>
 
-<p><b>Setup:</b><br><br>
+<p><b>Setup:</b><br>
 BIXPY follows a multiprocessing rather than a multithreading approach. Redis is used as message broker. You can setup Redis within a few seconds. Here is a short example how to install it on Debian/Ubuntu:</p>
 
 <p><code>$ sudo apt-get install redis-server</code></p>
